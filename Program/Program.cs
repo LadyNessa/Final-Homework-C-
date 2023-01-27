@@ -2,7 +2,7 @@
 {
     for (int i = 0; i < array.Length; i++)
     {
-        Console.Write($"array[i]");
+        Console.Write($"{array[i]} ");
     }
         Console.WriteLine();
 }
@@ -19,3 +19,5 @@ for (int i = 0; i < array1.Length; i++)
         count++;
     }
 }
+
+PrintArray(array2);
