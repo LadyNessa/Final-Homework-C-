@@ -7,8 +7,10 @@
         Console.WriteLine();
 }
 
-string[]array1 = new string[4] {"hello", "2", "world", ":-)"};
-string[]array2 = new string[4];
+Console.WriteLine("Введите элементы первоначального массива через пробел: ");
+string arr = Console.ReadLine();
+string[]array1 = arr.Split(' ');
+string[]array2 = new string[array1.Length];
 
 int count = 0;
 for (int i = 0; i < array1.Length; i++)
@@ -20,4 +22,5 @@ for (int i = 0; i < array1.Length; i++)
     }
 }
 
+Console.Write("Элементы, длина которых меньше либо равна 3 символа: ");
 PrintArray(array2);
